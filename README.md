@@ -12,3 +12,4 @@ Ils incluent tous les fichiers nécéssaires afin de compiler un projet SFML et 
 4. Chercher les "Todo" et commenter/décommenter les lignes si vous ne voulez pas que la console s'affiche
 5. Ouvrir le dossier avec Visual Studio et choisir le bon target de build.
 6. Bosser !
+
