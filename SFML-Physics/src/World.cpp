@@ -28,9 +28,9 @@ void World::SpawnRectangle(Vector size, Vector position, Vector velocity, BodyTy
     if (_entities.back().IsStuckInsideBorder(*this))  _grid.RemoveEntityFromCell(&_entities.back());
 }
 
-void World::SpawnTriangle(Vector size, Vector position, Vector velocity, BodyType bodyType, sf::Color color)
+void World::SpawnTriangle(Vector scale, Vector position, Vector velocity, BodyType bodyType, sf::Color color)
 {
-    sf::ConvexShape triangleShape = ShapeBuilder::CreateTriangleShape(size, position, color);
+    sf::ConvexShape triangleShape = ShapeBuilder::CreateTriangleShape(scale, position, color);
     Entity triangle = Entity(std::make_unique<sf::ConvexShape>(sf::ConvexShape(triangleShape)));
     triangle.GetRigidbody().SetBodyType(bodyType);
     _entities.emplace_back(triangle);

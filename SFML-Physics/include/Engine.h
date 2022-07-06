@@ -10,7 +10,7 @@ protected:
 	EngineWindow _window;	
 	World _world;
 	sf::Clock _deltaclock;
-	sf::Time _deltaTime;
+	float _deltaTime;
 
 private:
 	void Run();

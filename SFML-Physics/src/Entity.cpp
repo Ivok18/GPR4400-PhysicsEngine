@@ -24,6 +24,7 @@ Entity::Entity(Entity& const entity)
 {
     _shape = std::move(entity._shape);
 }
+
 bool Entity::operator!=(Entity& other)
 {
     return (_id != other._id);
@@ -102,7 +103,6 @@ bool Entity::IsStuckInsideBorder(World& world)
         || GetPosition().GetX() - GetCollider().width / 2 <= 0
         && std::abs(_rigidbody.GetVelocity().GetY()) < 50;
 }
-
 
 void Entity::HandleCollisionWithBorder(World& world)
 {

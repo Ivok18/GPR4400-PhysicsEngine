@@ -19,7 +19,7 @@ public:
 	Grid& GetGrid();
 
 	void SpawnRectangle(Vector size, Vector position, Vector velocity, BodyType bodyType, sf::Color color);
-	void SpawnTriangle(Vector size, Vector position, Vector velocity, BodyType bodyType, sf::Color color);
+	void SpawnTriangle(Vector scale, Vector position, Vector velocity, BodyType bodyType, sf::Color color);
 	void SpawnCircle(float radius, Vector position, Vector velocity, BodyType bodyType, sf::Color color);
 
 	void Update(float dt);

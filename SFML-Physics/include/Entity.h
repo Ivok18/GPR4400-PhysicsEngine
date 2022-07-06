@@ -44,8 +44,8 @@ public:
     void SetOwnerCell(Cell* owner);
     int GetOwnerCellVectorIndex();
     void SetOwnerCellVectorIndex(int newIndex);
-    bool IsStuckInsideBorder(World& world);
 
+    bool IsStuckInsideBorder(World& world);
     void HandleCollisionWithBorder(World& world);
     void ResolveCollision();
 

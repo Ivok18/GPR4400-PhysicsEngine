@@ -112,10 +112,10 @@ void Engine::Update()
     _window.GetInstance().clear(sf::Color::White);
 
     // ..update engine world
-    _world.Update(_deltaTime.asSeconds());
+    _world.Update(_deltaTime);
 
     // ..get deltatime
-    _deltaTime = _deltaclock.restart();
+    _deltaTime = _deltaclock.restart().asSeconds();
 }
 
 void Engine::Render()
